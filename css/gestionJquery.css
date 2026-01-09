@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #e0e7ff;
+    font-family: sans-serif;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #111827;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.card {
+    padding: 15px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 120px;
+    display: block;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styles for card buttons */
+.card button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+}
+
+.card .borrar {
+    background-color: #ef4444;
+    /* Red for delete */
+}
+
+.card .borrar:hover {
+    background-color: #dc2626;
+}
+
+input[type="color"] {
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: none;
+}
