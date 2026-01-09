@@ -43,12 +43,31 @@ function crearElemento() {
 
 btnNuevo.addEventListener("click", crearElemento);
 
+
+//Aclarasdo del color del fondo para q no sea el mismo
+function aclararColor(hex, porcentaje = 0.7) {
+    let r = parseInt(hex.substring(1, 3), 16);
+    let g = parseInt(hex.substring(3, 5), 16);
+    let b = parseInt(hex.substring(5, 7), 16);
+
+    r = Math.round(r + (255 - r) * porcentaje);
+    g = Math.round(g + (255 - g) * porcentaje);
+    b = Math.round(b + (255 - b) * porcentaje);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 btnCambiarColor.addEventListener("click", () => {
     const color = inputColor.value;
+
     document.querySelectorAll(".card").forEach(card => {
         card.style.background = color;
     });
+
+    document.body.style.background = aclararColor(color, 0.7);
 });
+
+
 
 btnReset.addEventListener("click", () => {
     lista.innerHTML = "";

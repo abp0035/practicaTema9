@@ -37,6 +37,7 @@ h2 {
     gap: 15px;
     margin-top: 10px;
     justify-content: center;
+    
 }
 
 .card {
@@ -82,7 +83,6 @@ button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific styles for card buttons */
 .card button {
     font-size: 0.9em;
     padding: 8px 12px;
@@ -90,7 +90,6 @@ button:active {
 
 .card .borrar {
     background-color: #ef4444;
-    /* Red for delete */
 }
 
 .card .borrar:hover {
